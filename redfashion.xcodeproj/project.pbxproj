@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54137D701C351A2200969555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D6F1C351A2200969555 /* main.m */; };
+		54137D731C351A2200969555 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D721C351A2200969555 /* AppDelegate.m */; };
+		54137D761C351A2200969555 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D751C351A2200969555 /* ViewController.m */; };
+		54137D791C351A2200969555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54137D771C351A2200969555 /* Main.storyboard */; };
+		54137D7B1C351A2200969555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54137D7A1C351A2200969555 /* Assets.xcassets */; };
+		54137D7E1C351A2200969555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54137D7C1C351A2200969555 /* LaunchScreen.storyboard */; };
+		54137D891C351A2200969555 /* redfashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D881C351A2200969555 /* redfashionTests.m */; };
+		54137D941C351A2200969555 /* redfashionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D931C351A2200969555 /* redfashionUITests.m */; };
+		54CDBEB71C37FE47009CAA0F /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBEB61C37FE47009CAA0F /* RootTabBarController.m */; };
+		54CDBEBD1C37FFD3009CAA0F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBEBB1C37FFD3009CAA0F /* BaseViewController.m */; };
+		54CDBEBE1C37FFD3009CAA0F /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CDBEBC1C37FFD3009CAA0F /* BaseViewController.xib */; };
+		54CDBEC31C380003009CAA0F /* PickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBEC11C380003009CAA0F /* PickViewController.m */; };
+		54CDBEC41C380003009CAA0F /* PickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CDBEC21C380003009CAA0F /* PickViewController.xib */; };
+		54CDBECB1C382AA1009CAA0F /* ClassificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBEC91C382AA1009CAA0F /* ClassificationViewController.m */; };
+		54CDBECC1C382AA1009CAA0F /* ClassificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CDBECA1C382AA1009CAA0F /* ClassificationViewController.xib */; };
+		54CDBED01C382AB4009CAA0F /* FashionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBECE1C382AB4009CAA0F /* FashionViewController.m */; };
+		54CDBED11C382AB4009CAA0F /* FashionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CDBECF1C382AB4009CAA0F /* FashionViewController.xib */; };
+		54CDBED51C382ABF009CAA0F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBED31C382ABF009CAA0F /* MyViewController.m */; };
+		54CDBED61C382ABF009CAA0F /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CDBED41C382ABF009CAA0F /* MyViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54137D851C351A2200969555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54137D631C351A2200969555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54137D6A1C351A2200969555;
+			remoteInfo = redfashion;
+		};
+		54137D901C351A2200969555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54137D631C351A2200969555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54137D6A1C351A2200969555;
+			remoteInfo = redfashion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54137D6B1C351A2200969555 /* redfashion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redfashion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54137D6F1C351A2200969555 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54137D711C351A2200969555 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		54137D721C351A2200969555 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		54137D741C351A2200969555 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		54137D751C351A2200969555 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54137D781C351A2200969555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54137D7A1C351A2200969555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54137D7D1C351A2200969555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54137D7F1C351A2200969555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54137D841C351A2200969555 /* redfashionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redfashionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54137D881C351A2200969555 /* redfashionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = redfashionTests.m; sourceTree = "<group>"; };
+		54137D8A1C351A2200969555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54137D8F1C351A2200969555 /* redfashionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redfashionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54137D931C351A2200969555 /* redfashionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = redfashionUITests.m; sourceTree = "<group>"; };
+		54137D951C351A2200969555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CDBEB51C37FE47009CAA0F /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		54CDBEB61C37FE47009CAA0F /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		54CDBEBA1C37FFD3009CAA0F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		54CDBEBB1C37FFD3009CAA0F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		54CDBEBC1C37FFD3009CAA0F /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		54CDBEC01C380003009CAA0F /* PickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickViewController.h; sourceTree = "<group>"; };
+		54CDBEC11C380003009CAA0F /* PickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewController.m; sourceTree = "<group>"; };
+		54CDBEC21C380003009CAA0F /* PickViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickViewController.xib; sourceTree = "<group>"; };
+		54CDBEC81C382AA1009CAA0F /* ClassificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificationViewController.h; sourceTree = "<group>"; };
+		54CDBEC91C382AA1009CAA0F /* ClassificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassificationViewController.m; sourceTree = "<group>"; };
+		54CDBECA1C382AA1009CAA0F /* ClassificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassificationViewController.xib; sourceTree = "<group>"; };
+		54CDBECD1C382AB4009CAA0F /* FashionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionViewController.h; sourceTree = "<group>"; };
+		54CDBECE1C382AB4009CAA0F /* FashionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionViewController.m; sourceTree = "<group>"; };
+		54CDBECF1C382AB4009CAA0F /* FashionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FashionViewController.xib; sourceTree = "<group>"; };
+		54CDBED21C382ABF009CAA0F /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		54CDBED31C382ABF009CAA0F /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		54CDBED41C382ABF009CAA0F /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54137D681C351A2200969555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54137D811C351A2200969555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54137D8C1C351A2200969555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54137D621C351A2200969555 = {
+			isa = PBXGroup;
+			children = (
+				54CDBEB31C37FDF2009CAA0F /* Controller */,
+				54137D6D1C351A2200969555 /* redfashion */,
+				54137D871C351A2200969555 /* redfashionTests */,
+				54137D921C351A2200969555 /* redfashionUITests */,
+				54137D6C1C351A2200969555 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54137D6C1C351A2200969555 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54137D6B1C351A2200969555 /* redfashion.app */,
+				54137D841C351A2200969555 /* redfashionTests.xctest */,
+				54137D8F1C351A2200969555 /* redfashionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54137D6D1C351A2200969555 /* redfashion */ = {
+			isa = PBXGroup;
+			children = (
+				54137D711C351A2200969555 /* AppDelegate.h */,
+				54137D721C351A2200969555 /* AppDelegate.m */,
+				54137D741C351A2200969555 /* ViewController.h */,
+				54137D751C351A2200969555 /* ViewController.m */,
+				54137D771C351A2200969555 /* Main.storyboard */,
+				54137D7A1C351A2200969555 /* Assets.xcassets */,
+				54137D7C1C351A2200969555 /* LaunchScreen.storyboard */,
+				54137D7F1C351A2200969555 /* Info.plist */,
+				54137D6E1C351A2200969555 /* Supporting Files */,
+			);
+			path = redfashion;
+			sourceTree = "<group>";
+		};
+		54137D6E1C351A2200969555 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54137D6F1C351A2200969555 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54137D871C351A2200969555 /* redfashionTests */ = {
+			isa = PBXGroup;
+			children = (
+				54137D881C351A2200969555 /* redfashionTests.m */,
+				54137D8A1C351A2200969555 /* Info.plist */,
+			);
+			path = redfashionTests;
+			sourceTree = "<group>";
+		};
+		54137D921C351A2200969555 /* redfashionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54137D931C351A2200969555 /* redfashionUITests.m */,
+				54137D951C351A2200969555 /* Info.plist */,
+			);
+			path = redfashionUITests;
+			sourceTree = "<group>";
+		};
+		54CDBEB31C37FDF2009CAA0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54CDBEB91C37FF9D009CAA0F /* ViewControllers */,
+				54CDBEB41C37FE03009CAA0F /* Tabbarcontroler */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		54CDBEB41C37FE03009CAA0F /* Tabbarcontroler */ = {
+			isa = PBXGroup;
+			children = (
+				54CDBEB51C37FE47009CAA0F /* RootTabBarController.h */,
+				54CDBEB61C37FE47009CAA0F /* RootTabBarController.m */,
+			);
+			name = Tabbarcontroler;
+			sourceTree = "<group>";
+		};
+		54CDBEB91C37FF9D009CAA0F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				54CDBEC71C382A7C009CAA0F /* ClassificationViewcontroller */,
+				54CDBEC61C3829C7009CAA0F /* FashionViewController */,
+				54CDBEC51C3829AF009CAA0F /* MyViewController */,
+				54CDBEBF1C37FFDC009CAA0F /* PickViewController */,
+				54CDBEBA1C37FFD3009CAA0F /* BaseViewController.h */,
+				54CDBEBB1C37FFD3009CAA0F /* BaseViewController.m */,
+				54CDBEBC1C37FFD3009CAA0F /* BaseViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		54CDBEBF1C37FFDC009CAA0F /* PickViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54CDBEC01C380003009CAA0F /* PickViewController.h */,
+				54CDBEC11C380003009CAA0F /* PickViewController.m */,
+				54CDBEC21C380003009CAA0F /* PickViewController.xib */,
+			);
+			name = PickViewController;
+			sourceTree = "<group>";
+		};
+		54CDBEC51C3829AF009CAA0F /* MyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54CDBED21C382ABF009CAA0F /* MyViewController.h */,
+				54CDBED31C382ABF009CAA0F /* MyViewController.m */,
+				54CDBED41C382ABF009CAA0F /* MyViewController.xib */,
+			);
+			name = MyViewController;
+			sourceTree = "<group>";
+		};
+		54CDBEC61C3829C7009CAA0F /* FashionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54CDBECD1C382AB4009CAA0F /* FashionViewController.h */,
+				54CDBECE1C382AB4009CAA0F /* FashionViewController.m */,
+				54CDBECF1C382AB4009CAA0F /* FashionViewController.xib */,
+			);
+			name = FashionViewController;
+			sourceTree = "<group>";
+		};
+		54CDBEC71C382A7C009CAA0F /* ClassificationViewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				54CDBEC81C382AA1009CAA0F /* ClassificationViewController.h */,
+				54CDBEC91C382AA1009CAA0F /* ClassificationViewController.m */,
+				54CDBECA1C382AA1009CAA0F /* ClassificationViewController.xib */,
+			);
+			name = ClassificationViewcontroller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54137D6A1C351A2200969555 /* redfashion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54137D981C351A2300969555 /* Build configuration list for PBXNativeTarget "redfashion" */;
+			buildPhases = (
+				54137D671C351A2200969555 /* Sources */,
+				54137D681C351A2200969555 /* Frameworks */,
+				54137D691C351A2200969555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = redfashion;
+			productName = redfashion;
+			productReference = 54137D6B1C351A2200969555 /* redfashion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54137D831C351A2200969555 /* redfashionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54137D9B1C351A2300969555 /* Build configuration list for PBXNativeTarget "redfashionTests" */;
+			buildPhases = (
+				54137D801C351A2200969555 /* Sources */,
+				54137D811C351A2200969555 /* Frameworks */,
+				54137D821C351A2200969555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54137D861C351A2200969555 /* PBXTargetDependency */,
+			);
+			name = redfashionTests;
+			productName = redfashionTests;
+			productReference = 54137D841C351A2200969555 /* redfashionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54137D8E1C351A2200969555 /* redfashionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54137D9E1C351A2300969555 /* Build configuration list for PBXNativeTarget "redfashionUITests" */;
+			buildPhases = (
+				54137D8B1C351A2200969555 /* Sources */,
+				54137D8C1C351A2200969555 /* Frameworks */,
+				54137D8D1C351A2200969555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54137D911C351A2200969555 /* PBXTargetDependency */,
+			);
+			name = redfashionUITests;
+			productName = redfashionUITests;
+			productReference = 54137D8F1C351A2200969555 /* redfashionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54137D631C351A2200969555 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = xue;
+				TargetAttributes = {
+					54137D6A1C351A2200969555 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					54137D831C351A2200969555 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 54137D6A1C351A2200969555;
+					};
+					54137D8E1C351A2200969555 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 54137D6A1C351A2200969555;
+					};
+				};
+			};
+			buildConfigurationList = 54137D661C351A2200969555 /* Build configuration list for PBXProject "redfashion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54137D621C351A2200969555;
+			productRefGroup = 54137D6C1C351A2200969555 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54137D6A1C351A2200969555 /* redfashion */,
+				54137D831C351A2200969555 /* redfashionTests */,
+				54137D8E1C351A2200969555 /* redfashionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54137D691C351A2200969555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CDBED11C382AB4009CAA0F /* FashionViewController.xib in Resources */,
+				54137D7E1C351A2200969555 /* LaunchScreen.storyboard in Resources */,
+				54CDBED61C382ABF009CAA0F /* MyViewController.xib in Resources */,
+				54CDBEBE1C37FFD3009CAA0F /* BaseViewController.xib in Resources */,
+				54CDBECC1C382AA1009CAA0F /* ClassificationViewController.xib in Resources */,
+				54CDBEC41C380003009CAA0F /* PickViewController.xib in Resources */,
+				54137D7B1C351A2200969555 /* Assets.xcassets in Resources */,
+				54137D791C351A2200969555 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54137D821C351A2200969555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54137D8D1C351A2200969555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54137D671C351A2200969555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54CDBECB1C382AA1009CAA0F /* ClassificationViewController.m in Sources */,
+				54CDBED01C382AB4009CAA0F /* FashionViewController.m in Sources */,
+				54137D761C351A2200969555 /* ViewController.m in Sources */,
+				54CDBED51C382ABF009CAA0F /* MyViewController.m in Sources */,
+				54CDBEBD1C37FFD3009CAA0F /* BaseViewController.m in Sources */,
+				54CDBEB71C37FE47009CAA0F /* RootTabBarController.m in Sources */,
+				54137D731C351A2200969555 /* AppDelegate.m in Sources */,
+				54137D701C351A2200969555 /* main.m in Sources */,
+				54CDBEC31C380003009CAA0F /* PickViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54137D801C351A2200969555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54137D891C351A2200969555 /* redfashionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54137D8B1C351A2200969555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54137D941C351A2200969555 /* redfashionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54137D861C351A2200969555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54137D6A1C351A2200969555 /* redfashion */;
+			targetProxy = 54137D851C351A2200969555 /* PBXContainerItemProxy */;
+		};
+		54137D911C351A2200969555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54137D6A1C351A2200969555 /* redfashion */;
+			targetProxy = 54137D901C351A2200969555 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54137D771C351A2200969555 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54137D781C351A2200969555 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54137D7C1C351A2200969555 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54137D7D1C351A2200969555 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54137D961C351A2300969555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54137D971C351A2300969555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54137D991C351A2300969555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = redfashion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xue.redfashion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54137D9A1C351A2300969555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = redfashion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xue.redfashion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		54137D9C1C351A2300969555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = redfashionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xue.redfashionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/redfashion.app/redfashion";
+			};
+			name = Debug;
+		};
+		54137D9D1C351A2300969555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = redfashionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xue.redfashionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/redfashion.app/redfashion";
+			};
+			name = Release;
+		};
+		54137D9F1C351A2300969555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = redfashionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xue.redfashionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = redfashion;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		54137DA01C351A2300969555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = redfashionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xue.redfashionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = redfashion;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54137D661C351A2200969555 /* Build configuration list for PBXProject "redfashion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54137D961C351A2300969555 /* Debug */,
+				54137D971C351A2300969555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54137D981C351A2300969555 /* Build configuration list for PBXNativeTarget "redfashion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54137D991C351A2300969555 /* Debug */,
+				54137D9A1C351A2300969555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54137D9B1C351A2300969555 /* Build configuration list for PBXNativeTarget "redfashionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54137D9C1C351A2300969555 /* Debug */,
+				54137D9D1C351A2300969555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54137D9E1C351A2300969555 /* Build configuration list for PBXNativeTarget "redfashionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54137D9F1C351A2300969555 /* Debug */,
+				54137DA01C351A2300969555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54137D631C351A2200969555 /* Project object */;
+}
