@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface PickViewController : BaseViewController
-
+@property(nonatomic,strong)NSData *headData;
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "RootTabBarController.h"
-
 @interface RootTabBarController ()
 
 @end

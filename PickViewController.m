@@ -9,19 +9,19 @@
 #import "PickViewController.h"
 
 @interface PickViewController ()
-
+@property(nonatomic,strong)NSArray *headDataArr;
 @end
-
 @implementation PickViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self getHeadPicModel];
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)getHeadPicModel{
+    NSDictionary *dic=[NSJSONSerialization JSONObjectWithData:self.headData options:0 error:nil];
+    NSLog(@"%@",dic);
 }
 /*
 #pragma mark - Navigation

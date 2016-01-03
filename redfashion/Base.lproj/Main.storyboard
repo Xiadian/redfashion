@@ -58,7 +58,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="ZDc-WX-m2z" kind="presentation" id="2oT-51-HpC"/>
+                        <segue destination="ZDc-WX-m2z" kind="presentation" identifier="rootpresent" id="2oT-51-HpC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yc-LF-7dX" userLabel="First Responder" sceneMemberID="firstResponder"/>

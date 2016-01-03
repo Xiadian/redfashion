@@ -8,18 +8,23 @@
 
 #import "ViewController.h"
 #import "RootTabBarController.h"
+#import "AFNetworking.h"
+#import "PickViewController.h"
+#import "API.h"
 //屏幕宽高
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
 @interface ViewController ()
 @property(nonatomic,strong)UIScrollView *scro;
+@property(nonatomic,strong)NSData *data;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self  conNet];
     // 设置导航栏title颜色w
     NSDictionary * textA = @{
                              NSFontAttributeName : [UIFont systemFontOfSize:18],
@@ -35,8 +40,23 @@
        UIImageView *im=[[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
        im.image=[UIImage imageNamed:@"s_0"];
        [self.view addSubview:im];
-       [self performSelector:@selector(takein:) withObject:nil afterDelay:2];
    }
+}
+-(void)conNet{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible=YES;
+    AFHTTPSessionManager *session=[AFHTTPSessionManager manager];
+    session.responseSerializer=[AFHTTPResponseSerializer serializer];
+    NSString *url=PickView_head;
+    [session GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        NSLog(@"%@",downloadProgress);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
+        self.data=responseObject;
+        [self performSelector:@selector(takein:) withObject:nil afterDelay:1];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [self performSelector:@selector(takein:) withObject:nil afterDelay:1];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
+    }];
 }
 //第一次启动滑动导航
 -(void)creatFirstStartScrollView{
@@ -66,7 +86,6 @@
         }
     }
     self.scro.bounces=NO;
-    
     self.scro.contentOffset=CGPointMake(0, 0);
     self.scro.contentSize=view.bounds.size;
     self.scro.pagingEnabled=YES;
@@ -80,6 +99,9 @@
     ca.duration=1;
     [self.view.window.layer addAnimation:ca forKey:nil];
     RootTabBarController *root = [story instantiateViewControllerWithIdentifier:@"RootTabBarController"];
+    UINavigationController *nav=root.viewControllers[0];
+    PickViewController *pic=nav.viewControllers[0];
+    pic.headData=self.data;
     [self presentViewController:root animated:YES completion:nil];
 }
 @end
