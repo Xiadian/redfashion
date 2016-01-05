@@ -24,8 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self  conNet];
-    // 设置导航栏title颜色w
+        // 设置导航栏title颜色w
     NSDictionary * textA = @{
                              NSFontAttributeName : [UIFont systemFontOfSize:18],
                              NSForegroundColorAttributeName : [UIColor whiteColor],
@@ -35,28 +34,15 @@
   [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:253/255.0 green:124/255.0 blue:156/255.0 alpha:1]];
    // Do any additional setup after loading the view, typically from a nib.
    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstStart"]){
-       [self creatFirstStartScrollView];}
+       [self creatFirstStartScrollView];
+   }
    else{
        UIImageView *im=[[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
        im.image=[UIImage imageNamed:@"s_0"];
        [self.view addSubview:im];
+       [self performSelector:@selector(takein:) withObject:nil afterDelay:1];
+
    }
-}
--(void)conNet{
-    [UIApplication sharedApplication].networkActivityIndicatorVisible=YES;
-    AFHTTPSessionManager *session=[AFHTTPSessionManager manager];
-    session.responseSerializer=[AFHTTPResponseSerializer serializer];
-    NSString *url=PickView_head;
-    [session GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"%@",downloadProgress);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
-        self.data=responseObject;
-        [self performSelector:@selector(takein:) withObject:nil afterDelay:1];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self performSelector:@selector(takein:) withObject:nil afterDelay:1];
-        [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
-    }];
 }
 //第一次启动滑动导航
 -(void)creatFirstStartScrollView{
@@ -99,9 +85,6 @@
     ca.duration=1;
     [self.view.window.layer addAnimation:ca forKey:nil];
     RootTabBarController *root = [story instantiateViewControllerWithIdentifier:@"RootTabBarController"];
-    UINavigationController *nav=root.viewControllers[0];
-    PickViewController *pic=nav.viewControllers[0];
-    pic.headData=self.data;
-    [self presentViewController:root animated:YES completion:nil];
+     [self presentViewController:root animated:YES completion:nil];
 }
 @end

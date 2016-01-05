@@ -15,6 +15,11 @@
 		54137D7E1C351A2200969555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54137D7C1C351A2200969555 /* LaunchScreen.storyboard */; };
 		54137D891C351A2200969555 /* redfashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D881C351A2200969555 /* redfashionTests.m */; };
 		54137D941C351A2200969555 /* redfashionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D931C351A2200969555 /* redfashionUITests.m */; };
+		54B6EFD61C3BBD4B0018E9E9 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6EFD51C3BBD4B0018E9E9 /* ClassModel.m */; };
+		54B6EFDA1C3BD52D0018E9E9 /* ClassCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6EFD81C3BD52D0018E9E9 /* ClassCollectionViewCell.m */; };
+		54B6EFDB1C3BD52D0018E9E9 /* ClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6EFD91C3BD52D0018E9E9 /* ClassCollectionViewCell.xib */; };
+		54B6EFDF1C3BE1150018E9E9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6EFDD1C3BE1150018E9E9 /* LoginViewController.m */; };
+		54B6EFE01C3BE1150018E9E9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6EFDE1C3BE1150018E9E9 /* LoginViewController.xib */; };
 		54CDBEB71C37FE47009CAA0F /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBEB61C37FE47009CAA0F /* RootTabBarController.m */; };
 		54CDBEBD1C37FFD3009CAA0F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBEBB1C37FFD3009CAA0F /* BaseViewController.m */; };
 		54CDBEBE1C37FFD3009CAA0F /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CDBEBC1C37FFD3009CAA0F /* BaseViewController.xib */; };
@@ -50,6 +55,16 @@
 		54CDBF491C38DF97009CAA0F /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBF391C38DF97009CAA0F /* UIView+WebCacheOperation.m */; };
 		54CDBF4D1C38F67B009CAA0F /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBF4C1C38F67B009CAA0F /* BaseModel.m */; };
 		54CDBF511C38F723009CAA0F /* PickViewHeadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CDBF501C38F723009CAA0F /* PickViewHeadModel.m */; };
+		54E314161C3B636A003AAD23 /* FashionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E314151C3B636A003AAD23 /* FashionModel.m */; };
+		54E3141B1C3B6A8E003AAD23 /* FashionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E314191C3B6A8E003AAD23 /* FashionTableViewCell.m */; };
+		54E3141C1C3B6A8E003AAD23 /* FashionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E3141A1C3B6A8E003AAD23 /* FashionTableViewCell.xib */; };
+		54E461891C3A180100492BCB /* PickViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E461871C3A180100492BCB /* PickViewTableViewCell.m */; };
+		54E4618A1C3A180100492BCB /* PickViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E461881C3A180100492BCB /* PickViewTableViewCell.xib */; };
+		54E4618D1C3A23AF00492BCB /* PickViewBodyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E4618C1C3A23AF00492BCB /* PickViewBodyModel.m */; };
+		54E461921C3A8BDB00492BCB /* TopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E461901C3A8BDB00492BCB /* TopDetailViewController.m */; };
+		54E461931C3A8BDB00492BCB /* TopDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E461911C3A8BDB00492BCB /* TopDetailViewController.xib */; };
+		54E461981C3A8C8400492BCB /* BodyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E461961C3A8C8400492BCB /* BodyDetailViewController.m */; };
+		54E461991C3A8C8400492BCB /* BodyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E461971C3A8C8400492BCB /* BodyDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +101,14 @@
 		54137D8F1C351A2200969555 /* redfashionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redfashionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54137D931C351A2200969555 /* redfashionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = redfashionUITests.m; sourceTree = "<group>"; };
 		54137D951C351A2200969555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B6EFD41C3BBD4B0018E9E9 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
+		54B6EFD51C3BBD4B0018E9E9 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
+		54B6EFD71C3BD52D0018E9E9 /* ClassCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassCollectionViewCell.h; sourceTree = "<group>"; };
+		54B6EFD81C3BD52D0018E9E9 /* ClassCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassCollectionViewCell.m; sourceTree = "<group>"; };
+		54B6EFD91C3BD52D0018E9E9 /* ClassCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassCollectionViewCell.xib; sourceTree = "<group>"; };
+		54B6EFDC1C3BE1150018E9E9 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		54B6EFDD1C3BE1150018E9E9 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		54B6EFDE1C3BE1150018E9E9 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		54CDBEB51C37FE47009CAA0F /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
 		54CDBEB61C37FE47009CAA0F /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
 		54CDBEBA1C37FFD3009CAA0F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -154,6 +177,22 @@
 		54CDBF4F1C38F723009CAA0F /* PickViewHeadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickViewHeadModel.h; sourceTree = "<group>"; };
 		54CDBF501C38F723009CAA0F /* PickViewHeadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewHeadModel.m; sourceTree = "<group>"; };
 		54CDBF521C38F7B2009CAA0F /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		54E314141C3B636A003AAD23 /* FashionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionModel.h; sourceTree = "<group>"; };
+		54E314151C3B636A003AAD23 /* FashionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionModel.m; sourceTree = "<group>"; };
+		54E314181C3B6A8E003AAD23 /* FashionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionTableViewCell.h; sourceTree = "<group>"; };
+		54E314191C3B6A8E003AAD23 /* FashionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionTableViewCell.m; sourceTree = "<group>"; };
+		54E3141A1C3B6A8E003AAD23 /* FashionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FashionTableViewCell.xib; sourceTree = "<group>"; };
+		54E461861C3A180100492BCB /* PickViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickViewTableViewCell.h; sourceTree = "<group>"; };
+		54E461871C3A180100492BCB /* PickViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewTableViewCell.m; sourceTree = "<group>"; };
+		54E461881C3A180100492BCB /* PickViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickViewTableViewCell.xib; sourceTree = "<group>"; };
+		54E4618B1C3A23AF00492BCB /* PickViewBodyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickViewBodyModel.h; sourceTree = "<group>"; };
+		54E4618C1C3A23AF00492BCB /* PickViewBodyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewBodyModel.m; sourceTree = "<group>"; };
+		54E4618F1C3A8BDB00492BCB /* TopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopDetailViewController.h; sourceTree = "<group>"; };
+		54E461901C3A8BDB00492BCB /* TopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopDetailViewController.m; sourceTree = "<group>"; };
+		54E461911C3A8BDB00492BCB /* TopDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopDetailViewController.xib; sourceTree = "<group>"; };
+		54E461951C3A8C8400492BCB /* BodyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyDetailViewController.h; sourceTree = "<group>"; };
+		54E461961C3A8C8400492BCB /* BodyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyDetailViewController.m; sourceTree = "<group>"; };
+		54E461971C3A8C8400492BCB /* BodyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BodyDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +223,7 @@
 		54137D621C351A2200969555 = {
 			isa = PBXGroup;
 			children = (
+				54E461851C3A17C100492BCB /* View */,
 				54CDBF4A1C38F648009CAA0F /* Model */,
 				54CDBED71C38DF1F009CAA0F /* Common */,
 				54CDBEB31C37FDF2009CAA0F /* Controller */,
@@ -246,6 +286,15 @@
 			path = redfashionUITests;
 			sourceTree = "<group>";
 		};
+		54B6EFD31C3BBD2B0018E9E9 /* ClassModel */ = {
+			isa = PBXGroup;
+			children = (
+				54B6EFD41C3BBD4B0018E9E9 /* ClassModel.h */,
+				54B6EFD51C3BBD4B0018E9E9 /* ClassModel.m */,
+			);
+			name = ClassModel;
+			sourceTree = "<group>";
+		};
 		54CDBEB31C37FDF2009CAA0F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +330,8 @@
 		54CDBEBF1C37FFDC009CAA0F /* PickViewController */ = {
 			isa = PBXGroup;
 			children = (
+				54E461941C3A8C6800492BCB /* BodyDetail */,
+				54E4618E1C3A8B9800492BCB /* TopDetail */,
 				54CDBEC01C380003009CAA0F /* PickViewController.h */,
 				54CDBEC11C380003009CAA0F /* PickViewController.m */,
 				54CDBEC21C380003009CAA0F /* PickViewController.xib */,
@@ -294,6 +345,9 @@
 				54CDBED21C382ABF009CAA0F /* MyViewController.h */,
 				54CDBED31C382ABF009CAA0F /* MyViewController.m */,
 				54CDBED41C382ABF009CAA0F /* MyViewController.xib */,
+				54B6EFDC1C3BE1150018E9E9 /* LoginViewController.h */,
+				54B6EFDD1C3BE1150018E9E9 /* LoginViewController.m */,
+				54B6EFDE1C3BE1150018E9E9 /* LoginViewController.xib */,
 			);
 			name = MyViewController;
 			sourceTree = "<group>";
@@ -391,6 +445,8 @@
 		54CDBF4A1C38F648009CAA0F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				54B6EFD31C3BBD2B0018E9E9 /* ClassModel */,
+				54E314131C3B6334003AAD23 /* FashionDress */,
 				54CDBF4E1C38F680009CAA0F /* PickViewModel */,
 				54CDBF4B1C38F67B009CAA0F /* BaseModel.h */,
 				54CDBF4C1C38F67B009CAA0F /* BaseModel.m */,
@@ -403,8 +459,63 @@
 			children = (
 				54CDBF4F1C38F723009CAA0F /* PickViewHeadModel.h */,
 				54CDBF501C38F723009CAA0F /* PickViewHeadModel.m */,
+				54E4618B1C3A23AF00492BCB /* PickViewBodyModel.h */,
+				54E4618C1C3A23AF00492BCB /* PickViewBodyModel.m */,
 			);
 			name = PickViewModel;
+			sourceTree = "<group>";
+		};
+		54E314131C3B6334003AAD23 /* FashionDress */ = {
+			isa = PBXGroup;
+			children = (
+				54E314141C3B636A003AAD23 /* FashionModel.h */,
+				54E314151C3B636A003AAD23 /* FashionModel.m */,
+			);
+			name = FashionDress;
+			sourceTree = "<group>";
+		};
+		54E314171C3B69F1003AAD23 /* FashionViewTableViewCell.h */ = {
+			isa = PBXGroup;
+			children = (
+				54E314181C3B6A8E003AAD23 /* FashionTableViewCell.h */,
+				54E314191C3B6A8E003AAD23 /* FashionTableViewCell.m */,
+				54E3141A1C3B6A8E003AAD23 /* FashionTableViewCell.xib */,
+			);
+			name = FashionViewTableViewCell.h;
+			sourceTree = "<group>";
+		};
+		54E461851C3A17C100492BCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E314171C3B69F1003AAD23 /* FashionViewTableViewCell.h */,
+				54E461861C3A180100492BCB /* PickViewTableViewCell.h */,
+				54E461871C3A180100492BCB /* PickViewTableViewCell.m */,
+				54E461881C3A180100492BCB /* PickViewTableViewCell.xib */,
+				54B6EFD71C3BD52D0018E9E9 /* ClassCollectionViewCell.h */,
+				54B6EFD81C3BD52D0018E9E9 /* ClassCollectionViewCell.m */,
+				54B6EFD91C3BD52D0018E9E9 /* ClassCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		54E4618E1C3A8B9800492BCB /* TopDetail */ = {
+			isa = PBXGroup;
+			children = (
+				54E4618F1C3A8BDB00492BCB /* TopDetailViewController.h */,
+				54E461901C3A8BDB00492BCB /* TopDetailViewController.m */,
+				54E461911C3A8BDB00492BCB /* TopDetailViewController.xib */,
+			);
+			name = TopDetail;
+			sourceTree = "<group>";
+		};
+		54E461941C3A8C6800492BCB /* BodyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				54E461951C3A8C8400492BCB /* BodyDetailViewController.h */,
+				54E461961C3A8C8400492BCB /* BodyDetailViewController.m */,
+				54E461971C3A8C8400492BCB /* BodyDetailViewController.xib */,
+			);
+			name = BodyDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,12 +622,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				54CDBED11C382AB4009CAA0F /* FashionViewController.xib in Resources */,
+				54E461991C3A8C8400492BCB /* BodyDetailViewController.xib in Resources */,
 				54137D7E1C351A2200969555 /* LaunchScreen.storyboard in Resources */,
+				54B6EFDB1C3BD52D0018E9E9 /* ClassCollectionViewCell.xib in Resources */,
 				54CDBED61C382ABF009CAA0F /* MyViewController.xib in Resources */,
+				54E3141C1C3B6A8E003AAD23 /* FashionTableViewCell.xib in Resources */,
 				54CDBEBE1C37FFD3009CAA0F /* BaseViewController.xib in Resources */,
+				54E4618A1C3A180100492BCB /* PickViewTableViewCell.xib in Resources */,
 				54CDBECC1C382AA1009CAA0F /* ClassificationViewController.xib in Resources */,
 				54CDBEC41C380003009CAA0F /* PickViewController.xib in Resources */,
+				54E461931C3A8BDB00492BCB /* TopDetailViewController.xib in Resources */,
 				54137D7B1C351A2200969555 /* Assets.xcassets in Resources */,
+				54B6EFE01C3BE1150018E9E9 /* LoginViewController.xib in Resources */,
 				54137D791C351A2200969555 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,16 +662,21 @@
 				54CDBF441C38DF97009CAA0F /* UIImage+GIF.m in Sources */,
 				54CDBF411C38DF97009CAA0F /* SDWebImageManager.m in Sources */,
 				54CDBF481C38DF97009CAA0F /* UIImageView+WebCache.m in Sources */,
+				54E461891C3A180100492BCB /* PickViewTableViewCell.m in Sources */,
 				54CDBF401C38DF97009CAA0F /* SDWebImageDownloaderOperation.m in Sources */,
 				54CDBF171C38DF65009CAA0F /* AFURLSessionManager.m in Sources */,
+				54B6EFD61C3BBD4B0018E9E9 /* ClassModel.m in Sources */,
 				54CDBF3C1C38DF97009CAA0F /* SDImageCache.m in Sources */,
 				54CDBF3A1C38DF97009CAA0F /* MKAnnotationView+WebCache.m in Sources */,
 				54CDBECB1C382AA1009CAA0F /* ClassificationViewController.m in Sources */,
+				54E461921C3A8BDB00492BCB /* TopDetailViewController.m in Sources */,
 				54CDBF451C38DF97009CAA0F /* UIImage+MultiFormat.m in Sources */,
 				54CDBED01C382AB4009CAA0F /* FashionViewController.m in Sources */,
+				54E314161C3B636A003AAD23 /* FashionModel.m in Sources */,
 				54137D761C351A2200969555 /* ViewController.m in Sources */,
 				54CDBF491C38DF97009CAA0F /* UIView+WebCacheOperation.m in Sources */,
 				54CDBED51C382ABF009CAA0F /* MyViewController.m in Sources */,
+				54E3141B1C3B6A8E003AAD23 /* FashionTableViewCell.m in Sources */,
 				54CDBF461C38DF97009CAA0F /* UIImage+WebP.m in Sources */,
 				54CDBF421C38DF97009CAA0F /* SDWebImagePrefetcher.m in Sources */,
 				54CDBF511C38F723009CAA0F /* PickViewHeadModel.m in Sources */,
@@ -562,19 +684,23 @@
 				54CDBEBD1C37FFD3009CAA0F /* BaseViewController.m in Sources */,
 				54CDBF151C38DF65009CAA0F /* AFURLRequestSerialization.m in Sources */,
 				54CDBF4D1C38F67B009CAA0F /* BaseModel.m in Sources */,
+				54E461981C3A8C8400492BCB /* BodyDetailViewController.m in Sources */,
 				54CDBF3D1C38DF97009CAA0F /* SDWebImageCompat.m in Sources */,
 				54CDBF3B1C38DF97009CAA0F /* NSData+ImageContentType.m in Sources */,
 				54CDBF3E1C38DF97009CAA0F /* SDWebImageDecoder.m in Sources */,
 				54CDBEB71C37FE47009CAA0F /* RootTabBarController.m in Sources */,
 				54CDBF471C38DF97009CAA0F /* UIImageView+HighlightedWebCache.m in Sources */,
 				54CDBF431C38DF97009CAA0F /* UIButton+WebCache.m in Sources */,
+				54B6EFDF1C3BE1150018E9E9 /* LoginViewController.m in Sources */,
 				54137D731C351A2200969555 /* AppDelegate.m in Sources */,
 				54CDBF121C38DF65009CAA0F /* AFHTTPSessionManager.m in Sources */,
+				54E4618D1C3A23AF00492BCB /* PickViewBodyModel.m in Sources */,
 				54137D701C351A2200969555 /* main.m in Sources */,
 				54CDBF131C38DF65009CAA0F /* AFNetworkReachabilityManager.m in Sources */,
 				54CDBF161C38DF65009CAA0F /* AFURLResponseSerialization.m in Sources */,
 				54CDBF3F1C38DF97009CAA0F /* SDWebImageDownloader.m in Sources */,
 				54CDBEC31C380003009CAA0F /* PickViewController.m in Sources */,
+				54B6EFDA1C3BD52D0018E9E9 /* ClassCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
