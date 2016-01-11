@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "API.h"
+#import "MJRefresh.h"
 //屏幕宽高
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height

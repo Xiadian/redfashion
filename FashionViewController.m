@@ -7,7 +7,6 @@
 //  Created by XiaDian on 16/1/2.
 //  Copyright © 2016年 xue. All rights reserved.
 //
-
 #import "FashionViewController.h"
 #import "FashionModel.h"
 #import "FashionTableViewCell.h"
@@ -15,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)NSData *fashionData;
 @property(nonatomic,strong)NSArray *fashionDataArr;
+@property(nonatomic,strong)UIViewController *pic;
 @end
 @implementation FashionViewController
 
@@ -35,11 +35,9 @@
     [session GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
-       // self.activityView.hidden=YES;
         self.fashionData=responseObject;
         [self getModel];
         [self.tableView reloadData];
-       // [self createUI];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
       //  self.activityView.hidden=YES;
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
@@ -51,7 +49,6 @@
         NSArray *arr=dic[@"data"][@"items"];
         NSMutableArray *mArr=[NSMutableArray new];
         for (NSDictionary *dicValue in arr) {
-            
             FashionModel *pick=[[FashionModel alloc]init];
             pick.descriptions=dicValue[@"data"][@"description"];
             [pick setValuesForKeysWithDictionary:dicValue[@"data"]];
@@ -71,7 +68,10 @@
         imag1.backgroundColor=[UIColor whiteColor];
         imag1.contentMode=UIViewContentModeScaleAspectFit;
        NSString *url=model.image_urls[i];
-        [imag1 sd_setImageWithURL:[NSURL URLWithString:url]];
+        [imag1 sd_setImageWithURL:[NSURL URLWithString:url]placeholderImage:[UIImage imageNamed:@"zairu"]];
+        UITapGestureRecognizer *tapBg = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBgView:)];
+        imag1.userInteractionEnabled=YES;
+        [imag1 addGestureRecognizer:tapBg];
         [view addSubview:imag1];
     }
      [cell.scrollView addSubview:view];
@@ -82,6 +82,24 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return  self.fashionDataArr.count;
+}
+-(void)tapBgView:(UITapGestureRecognizer *)tapBgRecognizer
+{
+    UIImageView *im=(UIImageView *)tapBgRecognizer.view;
+    self.pic=[[UIViewController alloc]init];
+     self.pic.view.backgroundColor=[UIColor blackColor];
+    UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height*2/3.0)];
+    imageView.image=im.image;
+    [ self.pic.view addSubview:imageView];
+    imageView.contentMode=UIViewContentModeScaleAspectFit;
+    imageView.userInteractionEnabled=YES;
+     UITapGestureRecognizer *tapBig = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBigView:)];
+    [self.pic.view addGestureRecognizer:tapBig];
+    [self presentViewController: self.pic animated:YES completion:nil];
+}
+-(void)tapBigView:(UITapGestureRecognizer *)tapBgRecognizer
+{
+    [self.pic dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

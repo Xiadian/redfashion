@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClassificationViewController">
             <connections>
+                <outlet property="activityView" destination="GjT-Jn-foM" id="3z4-ja-1fT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,21 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GjT-Jn-foM">
+                    <rect key="frame" x="281.5" y="281" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="OOS-Rb-oWJ"/>
+                        <constraint firstAttribute="height" constant="37" id="voo-bi-eQb"/>
+                    </constraints>
+                    <color key="color" red="1" green="0.78703172779999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GjT-Jn-foM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b0f-xZ-ewu"/>
+                <constraint firstItem="GjT-Jn-foM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ssv-dk-I7z"/>
+            </constraints>
         </view>
     </objects>
 </document>

@@ -17,6 +17,7 @@
 #import "BodyDetailViewController.h"
 @interface ClassificationViewController ()<UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong)NSData *ClassTableData;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
 @property(nonatomic,strong)NSArray *ClassTableDataArr;
 @property(nonatomic,strong)NSData *ClassCollectionData;
 @property(nonatomic,strong)NSArray *ClassCollectionDataArr;
@@ -37,14 +38,14 @@ self.collectionView.backgroundColor=[[UIColor colorWithRed:253/255.0 green:124/2
 }
 -(void)conNet{
     [UIApplication sharedApplication].networkActivityIndicatorVisible=YES;
-   // self.activityView.hidden=NO;
+   self.activityView.hidden=NO;
     AFHTTPSessionManager *session=[AFHTTPSessionManager manager];
     session.responseSerializer=[AFHTTPResponseSerializer serializer];
     NSString *url=Class_group_url;
     [session GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
-        //self.activityView.hidden=YES;
+        self.activityView.hidden=YES;
         self.ClassTableData=responseObject;
         [self getModel];
         [self.tableView reloadData];
@@ -58,12 +59,12 @@ self.collectionView.backgroundColor=[[UIColor colorWithRed:253/255.0 green:124/2
     [session GET:urlll parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
-        //self.activityView.hidden=YES;
+        self.activityView.hidden=YES;
         self.ClassCollectionData=responseObject;
         [self getcollectModel];
         [self.collectionView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //  self.activityView.hidden=YES;
+          self.activityView.hidden=YES;
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
     }];
     
@@ -143,7 +144,7 @@ self.collectionView.backgroundColor=[[UIColor colorWithRed:253/255.0 green:124/2
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [UIApplication sharedApplication].networkActivityIndicatorVisible=YES;
-    // self.activityView.hidden=NO;
+     self.activityView.hidden=NO;
     ClassModel *sm =self.ClassTableDataArr[indexPath.section];
     FashionModel *fs=sm.rowModel[indexPath.row];
     AFHTTPSessionManager *session=[AFHTTPSessionManager manager];
@@ -152,12 +153,12 @@ self.collectionView.backgroundColor=[[UIColor colorWithRed:253/255.0 green:124/2
     [session GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
-        //self.activityView.hidden=YES;
+        self.activityView.hidden=YES;
         self.ClassCollectionData=responseObject;
         [self getcollectModel];
         [self.collectionView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //  self.activityView.hidden=YES;
+          self.activityView.hidden=YES;
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
     }];
 }
@@ -185,11 +186,10 @@ self.collectionView.backgroundColor=[[UIColor colorWithRed:253/255.0 green:124/2
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(10,2, 10,2);
 }
-
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ClassCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"xdc" forIndexPath:indexPath];
        PickViewBodyModel  *hm = self.ClassCollectionDataArr[indexPath.row];
-    [cell.imageVIew sd_setImageWithURL:[NSURL URLWithString:hm.cover_image_url]];
+    [cell.imageVIew sd_setImageWithURL:[NSURL URLWithString:hm.cover_image_url]placeholderImage:[UIImage imageNamed:@"zairu"]];
     cell.labelTxt.backgroundColor=[[UIColor blackColor]colorWithAlphaComponent:0.6];
     cell.labelTxt.text=hm.title;
     return cell;

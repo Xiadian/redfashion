@@ -17,6 +17,7 @@
 @property(nonatomic,strong)UIScrollView *scro;
 @property(nonatomic,strong)NSArray *headDataArr;
 @property(nonatomic,strong)NSData *bodyData;
+@property(nonatomic,assign)NSInteger page;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
 @property(nonatomic,strong)NSArray *infoDataArr;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -27,11 +28,23 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-       
+    self.page=1;
     [self.tableView registerNib:[UINib nibWithNibName:@"PickViewTableViewCell" bundle:nil] forCellReuseIdentifier:@"xd"];
     // Do any additional setup after loading the view from its nib.
     [self conNet];
+    self.tableView.header=[MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHead)];
+    _tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upRefresh)];
     [self createUI];
+}
+-(void)refreshHead{
+ [self conNet];
+}
+-(void)upRefresh{
+#warning fdsdsdfsdf
+//    if () {
+//         _page++;
+//    }
+    [self conNet];
 }
 -(void)createUI{
     self.scro=[UIScrollView new];
@@ -80,11 +93,17 @@
         self.headData=responseObject;
         [self getHeadPicModel];
          [self createUI];
+        [self.tableView.header endRefreshing];
+        [_tableView.footer endRefreshing];
+
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         self.activityView.hidden=YES;
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
+        [self.tableView.header endRefreshing];
+        [_tableView.footer endRefreshing];
+
     }];
-     NSString *urlbody=[NSString stringWithFormat:PickView_body,1];
+     NSString *urlbody=[NSString stringWithFormat:PickView_body,self.page];
     [session GET:urlbody parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
@@ -92,9 +111,17 @@
         self.bodyData=responseObject;
         [self getBodyPicModel];
         [self.tableView reloadData];
+        [self.tableView.header endRefreshing];
+        [_tableView.footer endRefreshing];
+
+
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         self.activityView.hidden=YES;
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
+        [self.tableView.header endRefreshing];
+        [_tableView.footer endRefreshing];
+
+
     }];
     
 }
@@ -131,7 +158,7 @@ if(self.headData){
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     PickViewTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"xd" forIndexPath:indexPath];
     PickViewBodyModel *pic=self.infoDataArr[indexPath.row];
-    [cell.image sd_setImageWithURL:[NSURL URLWithString:pic.cover_image_url]];
+    [cell.image sd_setImageWithURL:[NSURL URLWithString:pic.cover_image_url]placeholderImage:[UIImage imageNamed:@"zairu"]];
     cell.titleLabel.text=pic.title;
     return cell;
 }
