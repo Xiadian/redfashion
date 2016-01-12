@@ -28,7 +28,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.page=20;
+    self.page=arc4random()%15;
     [self.tableView registerNib:[UINib nibWithNibName:@"PickViewTableViewCell" bundle:nil] forCellReuseIdentifier:@"xd"];
     // Do any additional setup after loading the view from its nib.
     [self conNet];

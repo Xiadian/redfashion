@@ -14,4 +14,5 @@
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,copy)NSString *id;
 @property(nonatomic,strong)NSArray *image_urls;
+@property(nonatomic,copy)NSString *next_url;
 @end

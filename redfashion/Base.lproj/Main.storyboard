@@ -273,7 +273,7 @@
         <!--我的-->
         <scene sceneID="bEe-Tw-tCu">
             <objects>
-                <viewController id="a3l-Xq-wUO" sceneMemberID="viewController">
+                <viewController id="a3l-Xq-wUO" customClass="MyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oCV-Z5-t7o"/>
                         <viewControllerLayoutGuide type="bottom" id="NRA-sK-OO3"/>
