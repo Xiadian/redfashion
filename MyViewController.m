@@ -11,14 +11,16 @@
 #import "MyViewController.h"
 #import <CoreLocation/CoreLocation.h>
 @interface MyViewController ()<CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *button;
 @end
 
 @implementation MyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-  }
+    self.button.layer.cornerRadius=40;
+    self.button.clipsToBounds=YES;
+}
 
 
 @end

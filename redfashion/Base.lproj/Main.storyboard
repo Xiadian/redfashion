@@ -281,9 +281,35 @@
                     <view key="view" contentMode="scaleToFill" id="v4O-1n-AyN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_bg" translatesAutoresizingMaskIntoConstraints="NO" id="mxs-s0-P8W">
+                                <rect key="frame" x="0.0" y="64" width="320" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hf8-gB-FfU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oj-dl-MDi">
+                                <rect key="frame" x="120" y="99" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="SEj-TU-Ddb"/>
+                                    <constraint firstAttribute="height" constant="80" id="lTB-f2-fVj"/>
+                                </constraints>
+                                <state key="normal" image="Icon"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mxs-s0-P8W" secondAttribute="trailing" constant="-16" id="DJV-tt-nfe"/>
+                            <constraint firstItem="mxs-s0-P8W" firstAttribute="top" secondItem="oCV-Z5-t7o" secondAttribute="bottom" id="EBe-N9-hdH"/>
+                            <constraint firstItem="1oj-dl-MDi" firstAttribute="centerY" secondItem="mxs-s0-P8W" secondAttribute="centerY" id="Tx5-8g-C78"/>
+                            <constraint firstItem="1oj-dl-MDi" firstAttribute="centerX" secondItem="mxs-s0-P8W" secondAttribute="centerX" id="ake-Nw-daY"/>
+                            <constraint firstItem="mxs-s0-P8W" firstAttribute="leading" secondItem="v4O-1n-AyN" secondAttribute="leadingMargin" constant="-16" id="aww-r6-yBh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="我的" id="L3Q-b2-BxT"/>
+                    <connections>
+                        <outlet property="button" destination="1oj-dl-MDi" id="g1V-Lp-8nx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9y-zz-Hjo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,6 +336,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Icon" width="114" height="114"/>
+        <image name="my_bg" width="1242" height="428"/>
         <image name="tab_0" width="33" height="33"/>
         <image name="tab_1" width="33" height="33"/>
         <image name="tab_2" width="33" height="33"/>
