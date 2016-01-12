@@ -28,7 +28,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.page=1;
+    self.page=20;
     [self.tableView registerNib:[UINib nibWithNibName:@"PickViewTableViewCell" bundle:nil] forCellReuseIdentifier:@"xd"];
     // Do any additional setup after loading the view from its nib.
     [self conNet];
@@ -40,11 +40,35 @@
  [self conNet];
 }
 -(void)upRefresh{
-#warning fdsdsdfsdf
-//    if () {
-//         _page++;
-//    }
-    [self conNet];
+    [self refreshBody];
+}
+-(void)refreshBody{
+    PickViewBodyModel * body=self.infoDataArr[0];
+    if (![body.next_url isEqualToString:@"http://api.chuandazhiapp.com/v1/channels/20/items?generation=2&gender=2&limit=20&offset=20"]) {
+        [UIApplication sharedApplication].networkActivityIndicatorVisible=YES;
+    self.activityView.hidden=NO;
+    AFHTTPSessionManager *session=[AFHTTPSessionManager manager];
+    session.responseSerializer=[AFHTTPResponseSerializer serializer];
+    NSString *urlbody=body.next_url;
+    [session GET:urlbody parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
+        self.activityView.hidden=YES;
+        self.bodyData=responseObject;
+        [self getBodyPicModel];
+        [self.tableView reloadData];
+        [self.tableView.header endRefreshing];
+        [_tableView.footer endRefreshing];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        self.activityView.hidden=YES;
+        [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
+        [self.tableView.header endRefreshing];
+        [_tableView.footer endRefreshing];
+    }];
+    }
+    else{
+        [_tableView.footer endRefreshing];
+    }
 }
 -(void)createUI{
     self.scro=[UIScrollView new];
@@ -113,24 +137,19 @@
         [self.tableView reloadData];
         [self.tableView.header endRefreshing];
         [_tableView.footer endRefreshing];
-
-
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         self.activityView.hidden=YES;
         [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
         [self.tableView.header endRefreshing];
         [_tableView.footer endRefreshing];
-
-
     }];
-    
 }
 
 -(void)getHeadPicModel{
 if(self.headData){
     NSDictionary *dic=[NSJSONSerialization JSONObjectWithData:self.headData options:0 error:nil];
     NSArray *arr=dic[@"data"][@"banners"];
-    NSMutableArray *mArr=[NSMutableArray new];
+    NSMutableArray *mArr=[[NSMutableArray alloc]init];
     for (NSDictionary *dicValue in arr) {
         PickViewHeadModel *pick=[[PickViewHeadModel alloc]init];
         pick.image_url=dicValue[@"image_url"];
@@ -145,7 +164,7 @@ if(self.headData){
         NSDictionary *dic=[NSJSONSerialization JSONObjectWithData:self.bodyData options:0 error:nil];
         NSArray *arr=dic[@"data"][@"items"];
         NSString *ss=dic[@"data"][@"paging"][@"next_url"];
-        NSMutableArray *mArr=[NSMutableArray new];
+        NSMutableArray *mArr=[[NSMutableArray alloc]initWithArray:self.infoDataArr];
         for (NSDictionary *dicValue in arr) {
             PickViewBodyModel *pick=[[PickViewBodyModel alloc]init];
             pick.next_url=ss;
