@@ -18,6 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
     // Override point for customization after application launch.
+    _mapManager = [[BMKMapManager alloc]init];
+    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
+    BOOL ret
+    = [_mapManager start:@"jRya6V2KSKtUicv7yi1O5smZ"  generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+
     return YES;
 }
 

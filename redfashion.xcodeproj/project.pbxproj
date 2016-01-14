@@ -15,6 +15,8 @@
 		54137D7E1C351A2200969555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54137D7C1C351A2200969555 /* LaunchScreen.storyboard */; };
 		54137D891C351A2200969555 /* redfashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D881C351A2200969555 /* redfashionTests.m */; };
 		54137D941C351A2200969555 /* redfashionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54137D931C351A2200969555 /* redfashionUITests.m */; };
+		54479A951C4633E400AEDDD5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54479A931C4633E400AEDDD5 /* TableViewController.m */; };
+		54479A961C4633E400AEDDD5 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54479A941C4633E400AEDDD5 /* TableViewController.xib */; };
 		54B6EFD61C3BBD4B0018E9E9 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6EFD51C3BBD4B0018E9E9 /* ClassModel.m */; };
 		54B6EFDA1C3BD52D0018E9E9 /* ClassCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6EFD81C3BD52D0018E9E9 /* ClassCollectionViewCell.m */; };
 		54B6EFDB1C3BD52D0018E9E9 /* ClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6EFD91C3BD52D0018E9E9 /* ClassCollectionViewCell.xib */; };
@@ -84,6 +86,14 @@
 		54E461931C3A8BDB00492BCB /* TopDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E461911C3A8BDB00492BCB /* TopDetailViewController.xib */; };
 		54E461981C3A8C8400492BCB /* BodyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E461961C3A8C8400492BCB /* BodyDetailViewController.m */; };
 		54E461991C3A8C8400492BCB /* BodyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E461971C3A8C8400492BCB /* BodyDetailViewController.xib */; };
+		54E7439E1C4730AE008819B2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E7439C1C4730AE008819B2 /* DetailViewController.m */; };
+		54E7439F1C4730AE008819B2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E7439D1C4730AE008819B2 /* DetailViewController.xib */; };
+		54E743AB1C4749BD008819B2 /* UIWindow+YzdHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E743A21C4749BD008819B2 /* UIWindow+YzdHUD.m */; };
+		54E743AC1C4749BD008819B2 /* YzdHUDBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E743A41C4749BD008819B2 /* YzdHUDBackgroundView.m */; };
+		54E743AD1C4749BD008819B2 /* YzdHUDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E743A61C4749BD008819B2 /* YzdHUDImageView.m */; };
+		54E743AE1C4749BD008819B2 /* YzdHUDIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E743A81C4749BD008819B2 /* YzdHUDIndicator.m */; };
+		54E743AF1C4749BD008819B2 /* YzdHUDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E743AA1C4749BD008819B2 /* YzdHUDLabel.m */; };
+		E03457AA43F954B206D7E5D5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDEFAE746EA5219A055562E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +114,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C15E30B50EBD9237852E4C6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2EDEFAE746EA5219A055562E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54137D6B1C351A2200969555 /* redfashion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redfashion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54137D6F1C351A2200969555 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54137D711C351A2200969555 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +132,9 @@
 		54137D8F1C351A2200969555 /* redfashionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redfashionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54137D931C351A2200969555 /* redfashionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = redfashionUITests.m; sourceTree = "<group>"; };
 		54137D951C351A2200969555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54479A921C4633E400AEDDD5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		54479A931C4633E400AEDDD5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		54479A941C4633E400AEDDD5 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		54B6EFD41C3BBD4B0018E9E9 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
 		54B6EFD51C3BBD4B0018E9E9 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
 		54B6EFD71C3BD52D0018E9E9 /* ClassCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassCollectionViewCell.h; sourceTree = "<group>"; };
@@ -250,6 +265,20 @@
 		54E461951C3A8C8400492BCB /* BodyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyDetailViewController.h; sourceTree = "<group>"; };
 		54E461961C3A8C8400492BCB /* BodyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyDetailViewController.m; sourceTree = "<group>"; };
 		54E461971C3A8C8400492BCB /* BodyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BodyDetailViewController.xib; sourceTree = "<group>"; };
+		54E7439B1C4730AE008819B2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		54E7439C1C4730AE008819B2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		54E7439D1C4730AE008819B2 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		54E743A11C4749BD008819B2 /* UIWindow+YzdHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+YzdHUD.h"; sourceTree = "<group>"; };
+		54E743A21C4749BD008819B2 /* UIWindow+YzdHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+YzdHUD.m"; sourceTree = "<group>"; };
+		54E743A31C4749BD008819B2 /* YzdHUDBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YzdHUDBackgroundView.h; sourceTree = "<group>"; };
+		54E743A41C4749BD008819B2 /* YzdHUDBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YzdHUDBackgroundView.m; sourceTree = "<group>"; };
+		54E743A51C4749BD008819B2 /* YzdHUDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YzdHUDImageView.h; sourceTree = "<group>"; };
+		54E743A61C4749BD008819B2 /* YzdHUDImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YzdHUDImageView.m; sourceTree = "<group>"; };
+		54E743A71C4749BD008819B2 /* YzdHUDIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YzdHUDIndicator.h; sourceTree = "<group>"; };
+		54E743A81C4749BD008819B2 /* YzdHUDIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YzdHUDIndicator.m; sourceTree = "<group>"; };
+		54E743A91C4749BD008819B2 /* YzdHUDLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YzdHUDLabel.h; sourceTree = "<group>"; };
+		54E743AA1C4749BD008819B2 /* YzdHUDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YzdHUDLabel.m; sourceTree = "<group>"; };
+		694C115B0EFFE7EA21565BD2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +286,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03457AA43F954B206D7E5D5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +307,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28622EA201CC91478AD78C40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEFAE746EA5219A055562E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54137D621C351A2200969555 = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +326,8 @@
 				54137D871C351A2200969555 /* redfashionTests */,
 				54137D921C351A2200969555 /* redfashionUITests */,
 				54137D6C1C351A2200969555 /* Products */,
+				BAA9E371EC8C7AB6FAEB1296 /* Pods */,
+				28622EA201CC91478AD78C40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -494,10 +534,16 @@
 			children = (
 				54CDBED21C382ABF009CAA0F /* MyViewController.h */,
 				54CDBED31C382ABF009CAA0F /* MyViewController.m */,
+				54479A921C4633E400AEDDD5 /* TableViewController.h */,
+				54479A931C4633E400AEDDD5 /* TableViewController.m */,
+				54479A941C4633E400AEDDD5 /* TableViewController.xib */,
 				54CDBED41C382ABF009CAA0F /* MyViewController.xib */,
 				54B6EFDC1C3BE1150018E9E9 /* LoginViewController.h */,
 				54B6EFDD1C3BE1150018E9E9 /* LoginViewController.m */,
 				54B6EFDE1C3BE1150018E9E9 /* LoginViewController.xib */,
+				54E7439B1C4730AE008819B2 /* DetailViewController.h */,
+				54E7439C1C4730AE008819B2 /* DetailViewController.m */,
+				54E7439D1C4730AE008819B2 /* DetailViewController.xib */,
 			);
 			name = MyViewController;
 			sourceTree = "<group>";
@@ -525,6 +571,7 @@
 		54CDBED71C38DF1F009CAA0F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				54E743A01C4749BD008819B2 /* Class */,
 				54B6EFE11C3BED200018E9E9 /* MJRefresh */,
 				54CDBF521C38F7B2009CAA0F /* API.h */,
 				54CDBF181C38DF97009CAA0F /* SDWebImage */,
@@ -669,6 +716,32 @@
 			name = BodyDetail;
 			sourceTree = "<group>";
 		};
+		54E743A01C4749BD008819B2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				54E743A11C4749BD008819B2 /* UIWindow+YzdHUD.h */,
+				54E743A21C4749BD008819B2 /* UIWindow+YzdHUD.m */,
+				54E743A31C4749BD008819B2 /* YzdHUDBackgroundView.h */,
+				54E743A41C4749BD008819B2 /* YzdHUDBackgroundView.m */,
+				54E743A51C4749BD008819B2 /* YzdHUDImageView.h */,
+				54E743A61C4749BD008819B2 /* YzdHUDImageView.m */,
+				54E743A71C4749BD008819B2 /* YzdHUDIndicator.h */,
+				54E743A81C4749BD008819B2 /* YzdHUDIndicator.m */,
+				54E743A91C4749BD008819B2 /* YzdHUDLabel.h */,
+				54E743AA1C4749BD008819B2 /* YzdHUDLabel.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		BAA9E371EC8C7AB6FAEB1296 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C15E30B50EBD9237852E4C6 /* Pods.debug.xcconfig */,
+				694C115B0EFFE7EA21565BD2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -676,9 +749,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54137D981C351A2300969555 /* Build configuration list for PBXNativeTarget "redfashion" */;
 			buildPhases = (
+				4AD86582DA0E763FC9A259DA /* Check Pods Manifest.lock */,
 				54137D671C351A2200969555 /* Sources */,
 				54137D681C351A2200969555 /* Frameworks */,
 				54137D691C351A2200969555 /* Resources */,
+				FCEB609D1823C2DF2DAFA862 /* Embed Pods Frameworks */,
+				6D5F885BDA1D2DAA2A836134 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -775,6 +851,7 @@
 			files = (
 				54CDBED11C382AB4009CAA0F /* FashionViewController.xib in Resources */,
 				54E461991C3A8C8400492BCB /* BodyDetailViewController.xib in Resources */,
+				54E7439F1C4730AE008819B2 /* DetailViewController.xib in Resources */,
 				54137D7E1C351A2200969555 /* LaunchScreen.storyboard in Resources */,
 				54B6EFDB1C3BD52D0018E9E9 /* ClassCollectionViewCell.xib in Resources */,
 				54CDBED61C382ABF009CAA0F /* MyViewController.xib in Resources */,
@@ -788,6 +865,7 @@
 				54137D7B1C351A2200969555 /* Assets.xcassets in Resources */,
 				54B6EFE01C3BE1150018E9E9 /* LoginViewController.xib in Resources */,
 				54137D791C351A2200969555 /* Main.storyboard in Resources */,
+				54479A961C4633E400AEDDD5 /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +885,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AD86582DA0E763FC9A259DA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D5F885BDA1D2DAA2A836134 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCEB609D1823C2DF2DAFA862 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54137D671C351A2200969555 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -821,8 +947,10 @@
 				54E461891C3A180100492BCB /* PickViewTableViewCell.m in Sources */,
 				54CDBF401C38DF97009CAA0F /* SDWebImageDownloaderOperation.m in Sources */,
 				54B6F0131C3BED200018E9E9 /* MJRefreshAutoGifFooter.m in Sources */,
+				54E7439E1C4730AE008819B2 /* DetailViewController.m in Sources */,
 				54B6F01B1C3BED200018E9E9 /* MJRefreshStateHeader.m in Sources */,
 				54B6F00E1C3BED200018E9E9 /* MJRefreshAutoFooter.m in Sources */,
+				54E743AB1C4749BD008819B2 /* UIWindow+YzdHUD.m in Sources */,
 				54CDBF171C38DF65009CAA0F /* AFURLSessionManager.m in Sources */,
 				54B6EFD61C3BBD4B0018E9E9 /* ClassModel.m in Sources */,
 				54CDBF3C1C38DF97009CAA0F /* SDImageCache.m in Sources */,
@@ -841,17 +969,21 @@
 				54CDBF491C38DF97009CAA0F /* UIView+WebCacheOperation.m in Sources */,
 				54CDBED51C382ABF009CAA0F /* MyViewController.m in Sources */,
 				54B6F01E1C3BED200018E9E9 /* UIScrollView+MJExtension.m in Sources */,
+				54E743AE1C4749BD008819B2 /* YzdHUDIndicator.m in Sources */,
 				54E3141B1C3B6A8E003AAD23 /* FashionTableViewCell.m in Sources */,
 				54CDBF461C38DF97009CAA0F /* UIImage+WebP.m in Sources */,
 				54B6F0201C3BED200018E9E9 /* UIView+MJExtension.m in Sources */,
 				54CDBF421C38DF97009CAA0F /* SDWebImagePrefetcher.m in Sources */,
 				54CDBF511C38F723009CAA0F /* PickViewHeadModel.m in Sources */,
+				54E743AC1C4749BD008819B2 /* YzdHUDBackgroundView.m in Sources */,
 				54CDBF141C38DF65009CAA0F /* AFSecurityPolicy.m in Sources */,
 				54CDBEBD1C37FFD3009CAA0F /* BaseViewController.m in Sources */,
 				54CDBF151C38DF65009CAA0F /* AFURLRequestSerialization.m in Sources */,
 				54CDBF4D1C38F67B009CAA0F /* BaseModel.m in Sources */,
 				54E461981C3A8C8400492BCB /* BodyDetailViewController.m in Sources */,
+				54E743AD1C4749BD008819B2 /* YzdHUDImageView.m in Sources */,
 				54CDBF3D1C38DF97009CAA0F /* SDWebImageCompat.m in Sources */,
+				54E743AF1C4749BD008819B2 /* YzdHUDLabel.m in Sources */,
 				54CDBF3B1C38DF97009CAA0F /* NSData+ImageContentType.m in Sources */,
 				54CDBF3E1C38DF97009CAA0F /* SDWebImageDecoder.m in Sources */,
 				54B6F0171C3BED200018E9E9 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -860,6 +992,7 @@
 				54B6F0101C3BED200018E9E9 /* MJRefreshComponent.m in Sources */,
 				54CDBF471C38DF97009CAA0F /* UIImageView+HighlightedWebCache.m in Sources */,
 				54CDBF431C38DF97009CAA0F /* UIButton+WebCache.m in Sources */,
+				54479A951C4633E400AEDDD5 /* TableViewController.m in Sources */,
 				54B6EFDF1C3BE1150018E9E9 /* LoginViewController.m in Sources */,
 				54137D731C351A2200969555 /* AppDelegate.m in Sources */,
 				54CDBF121C38DF65009CAA0F /* AFHTTPSessionManager.m in Sources */,
@@ -1008,6 +1141,7 @@
 		};
 		54137D991C351A2300969555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C15E30B50EBD9237852E4C6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1019,6 +1153,41 @@
 				INFOPLIST_FILE = redfashion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"sqlite3.0\"",
+					"-l\"stdc++.6.0.9\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Location\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Radar\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xue.redfashion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1027,6 +1196,7 @@
 		};
 		54137D9A1C351A2300969555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694C115B0EFFE7EA21565BD2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1035,6 +1205,41 @@
 				INFOPLIST_FILE = redfashion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"sqlite3.0\"",
+					"-l\"stdc++.6.0.9\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Location\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Radar\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xue.redfashion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
