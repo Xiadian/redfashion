@@ -31,7 +31,7 @@
     self.page=arc4random()%15;
     [self.tableView registerNib:[UINib nibWithNibName:@"PickViewTableViewCell" bundle:nil] forCellReuseIdentifier:@"xd"];
     // Do any additional setup after loading the view from its nib.
-    [self conNet];
+    [self checkNet];
     self.tableView.header=[MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHead)];
     _tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upRefresh)];
     [self createUI];
@@ -158,6 +158,30 @@ if(self.headData){
     }
     self.headDataArr=mArr;
 }
+}
+- (void) checkNet{
+    //开启网络状态监控
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        if(status==AFNetworkReachabilityStatusReachableViaWiFi){
+            NSLog(@"当前是wifi");
+            [self conNet];
+        }
+        if(status==AFNetworkReachabilityStatusReachableViaWWAN){
+            NSLog(@"当前是3G");
+            [self conNet];
+
+        }
+        if(status==AFNetworkReachabilityStatusNotReachable){
+            NSLog(@"当前是没有网络");
+            
+        }
+        if(status==AFNetworkReachabilityStatusUnknown){
+            NSLog(@"当前是未知网络");
+        }
+    }];
 }
 -(void)getBodyPicModel{
     if(self.bodyData){
